@@ -39,7 +39,7 @@ import BMIResult from "./components/BMI_Result";
 
 const App: React.FC = () => {
   const [calculatedBmi, setCalculatedBmi] = useState<number>();
-  const [ error, setError] = useState('false');
+  const [ error, setError] = useState('');
   const [calUnits, setCalUnits] = useState<'mkg' | 'ftlbs'>('mkg');
 
   const weightRef = useRef<HTMLIonInputElement>(null);
